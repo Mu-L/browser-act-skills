@@ -17,6 +17,7 @@ Complete BrowserAct CLI command index. For detailed usage and context, see the r
 |--------------|--------------------|-----|
 | Extract content from a protected site | `stealth-extract` | [Anti-Blocking](anti-blocking.md) |
 | Create an anti-scraping browser | `browser create --type stealth ...` | [Browser Modes](browser-modes.md) |
+| Manage static proxies | `proxy list` / `proxy buy-request` | [Anti-Blocking](anti-blocking.md) |
 | Open a page and interact | `browser open` → `state` → `click`/`input` | [Agent Design](agent-design.md) |
 | Find the API behind a page | `network requests` → `network request <id>` | [Agent Design](agent-design.md) |
 | Handle CAPTCHAs | `solve-captcha` → `remote-assist` | [Anti-Blocking](anti-blocking.md) / [Better Headless](headless.md) |
@@ -120,6 +121,7 @@ browser-act browser create \
   --desc "purpose description" \
   --source-profile <profile_id> \    # chrome only
   --dynamic-proxy <region> \         # stealth only
+  --static-proxy <proxy_id> \        # stealth only
   --custom-proxy <url> \             # stealth only
   --private true|false \             # stealth only
   --confirm-before-use
@@ -132,6 +134,7 @@ browser-act browser update <id> \
   --desc "overwrite description" \
   --desc-append "append to description" \
   --dynamic-proxy <region> \
+  --static-proxy <proxy_id> \
   --custom-proxy <url> \
   --no-proxy \
   --private true|false \
@@ -150,6 +153,7 @@ session list                   session close [name]
 browser-act stealth-extract <url>
 browser-act stealth-extract <url> --content-type html|markdown
 browser-act stealth-extract <url> --dynamic-proxy <region>
+browser-act stealth-extract <url> --static-proxy <proxy_id>
 browser-act stealth-extract <url> --custom-proxy <proxy-url>
 browser-act stealth-extract <url> --timeout 60
 browser-act stealth-extract <url> --output ./result.md
@@ -160,6 +164,14 @@ browser-act stealth-extract <url> --output ./result.md
 ```
 auth login                     auth poll
 auth set <api_key>             auth clear
+```
+
+### Proxy Management
+
+```
+proxy list                     proxy regions
+proxy buy-request              proxy buy-status --request-id <id>
+proxy rename <proxy_id> "<name>"
 ```
 
 ### Skill and System

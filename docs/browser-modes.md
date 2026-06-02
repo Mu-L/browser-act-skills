@@ -128,18 +128,23 @@ browser-act browser create --type stealth --name "monitor" \
 
 Each browser keeps a stable fingerprint + stable IP, so the account looks like a real user. Scale to multiple independent browsers — accounts cannot be correlated across them.
 
-Requires fixed IPs (dynamic proxies rotate). Use a separate, stable proxy per browser:
+Requires fixed IPs (dynamic proxies rotate). Recommended: use managed static proxies:
 
 ```bash
-# Each store gets its own stealth browser with a dedicated proxy
+# List purchased static proxies
+browser-act proxy list
+
+# Each store gets its own stealth browser with a dedicated static proxy
 browser-act browser create --type stealth --name "shop-1" \
   --desc "Taobao store 1: women's clothing" \
-  --custom-proxy socks5://user1:pass@proxy-a.com:1080
+  --static-proxy <proxy_id_1>
 
 browser-act browser create --type stealth --name "shop-2" \
   --desc "Taobao store 2: electronics" \
-  --custom-proxy socks5://user2:pass@proxy-b.com:1080
+  --static-proxy <proxy_id_2>
 ```
+
+Also supports `--custom-proxy socks5://host:port` if you bring your own fixed proxy.
 
 **Properties:**
 - Each browser has independent fingerprint, fixed proxy, and independent cookies
@@ -148,9 +153,7 @@ browser-act browser create --type stealth --name "shop-2" \
 - Login state persists; subsequent operations skip the login flow
 - Best for multi-store management, multi-account operations, and multi-account competitive monitoring
 
-**Trade-off:** Requires an API Key (managed service); proxies are bring-your-own.
-
-> **Managed fixed IPs (coming soon)** — In the future, BrowserAct will allocate long-term stable exit IPs directly, so you won't need to bring your own proxy.
+**Trade-off:** Requires an API Key (managed service). Managed static proxies require purchase; custom proxies are bring-your-own.
 
 ## Picking a Mode by Task
 
@@ -194,6 +197,7 @@ Regardless of mode, every browser shares the same structure:
 | `type` | `chrome` / `chrome-direct` / `stealth` |
 | `desc` | Natural-language purpose description (see [Agent Design](agent-design.md#desc-semantic-memory)) |
 | `dynamic_proxy` | Managed proxy region code (stealth only) |
+| `static_proxy` | Managed static proxy ID (stealth only) |
 | `custom_proxy` | Custom proxy URL (stealth only) |
 | `private` | Privacy mode toggle, default false (stealth only) |
 | `confirm_before_use` | Whether to ask the user before each use |

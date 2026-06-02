@@ -28,12 +28,12 @@ stealth browsers ship with a complete anti-detection stack, ensuring the site se
 | **Navigator patching** | `webdriver` / `chrome.runtime` / plugin array all normalized |
 | **TLS fingerprint rotation** | Matches real-browser TLS signatures |
 | **Headless concealment** | Run headless to save resources AND pass detection — both at once |
-| **Proxy system** | Dynamic proxy (auto-rotated regional IPs) / Static proxy (BYO fixed proxy) |
+| **Proxy system** | Dynamic proxy (auto-rotated regional IPs) / Static proxy (managed fixed IP) / Custom proxy (BYO) |
 | **Privacy mode** | Fresh fingerprint + empty profile per session, no persistence |
 
 ### Proxy System
 
-Only stealth browsers support proxies. The two modes are mutually exclusive:
+Only stealth browsers support proxies. The three modes are mutually exclusive:
 
 **Dynamic proxy (managed)**
 
@@ -43,6 +43,17 @@ browser-act browser create --type stealth --name s1 --desc "..." --dynamic-proxy
 
 - IP auto-rotates on every browser restart
 - List available regions: `browser-act browser regions`
+
+**Static proxy (managed fixed IP)**
+
+```bash
+browser-act browser create --type stealth --name s1 --desc "..." --static-proxy <proxy_id>
+```
+
+- Fixed IP, stable across sessions
+- Best for account warm-up, login persistence, API allowlists, and any scenario that requires being bound to the same IP long-term
+- List purchased proxies: `browser-act proxy list`
+- Purchase a new proxy: `browser-act proxy buy-request` (returns a purchase URL)
 
 **Custom proxy (BYO)**
 
@@ -93,6 +104,9 @@ browser-act stealth-extract https://example.com --content-type html
 
 # Use a managed proxy (region-specific IP)
 browser-act stealth-extract https://example.com --dynamic-proxy US
+
+# Use a managed static proxy (fixed IP)
+browser-act stealth-extract https://example.com --static-proxy <proxy_id>
 
 # Use a custom proxy
 browser-act stealth-extract https://example.com --custom-proxy socks5://host:port
