@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://www.browseract.com" style="text-decoration: none;">
+  <a href="https://www.browseract.com/?co-from=github" style="text-decoration: none;">
     <img src="https://browseract-prod.browseract.com/prod/tools/20260205-154549.png" alt="BrowserAct Logo" width="150">
   </a>
   <h1>BrowserAct Skills</h1>
@@ -9,7 +9,7 @@
     <a href="https://github.com/browser-act/skills/stargazers"><img src="https://img.shields.io/github/stars/browser-act/skills?style=social" alt="GitHub Stars"></a>
     <a href="https://github.com/browser-act/skills/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
     <br><br>
-    <a href="https://www.browseract.com"><img src="https://img.shields.io/badge/Website-BrowserAct.com-success" alt="Website"></a>
+    <a href="https://www.browseract.com/?co-from=github"><img src="https://img.shields.io/badge/Website-BrowserAct.com-success" alt="Website"></a>
     <a href="https://x.com/browseract"><img src="https://img.shields.io/badge/X-browseract-000000?style=flat&logo=x&logoColor=white" alt="X (Twitter)"></a>
     <a href="https://www.linkedin.com/company/browseract/"><img src="https://img.shields.io/badge/LinkedIn-BrowserAct-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
     <a href="https://www.youtube.com/@browseract"><img src="https://img.shields.io/badge/YouTube-@browseract-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
@@ -167,7 +167,7 @@ BrowserAct Skills is **free and open source**. If it saves you time, please give
 - 💬 [Join our Discord](https://discord.com/invite/UpnCKd7GaU)
 - 📖 [Read the Docs](https://docs.browseract.com)
 - 🐛 [Report an Issue](https://github.com/browser-act/skills/issues)
-- 🌐 [BrowserAct Website](https://www.browseract.com)
+- 🌐 [BrowserAct Website](https://www.browseract.com/?co-from=github)
 
 <p align="center"><em>Built with ❤️ by the BrowserAct Team</em></p>
 
