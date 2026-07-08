@@ -24,8 +24,6 @@ jobs:
         env:
           ACTIVITY_WEBHOOK_URL: ${{ secrets.COMMUNITY_ACTIVITY_WEBHOOK_URL }}
           ACTIVITY_WEBHOOK_SECRET: ${{ secrets.COMMUNITY_ACTIVITY_WEBHOOK_SECRET }}
-          EVENT_NAME: ${{ github.event_name }}
-          EVENT_PATH: ${{ github.event_path }}
         run: |
           node <<'NODE'
           const crypto = require('crypto');
@@ -38,8 +36,13 @@ jobs:
               return;
             }
 
-            const eventName = process.env.EVENT_NAME;
-            const payload = JSON.parse(fs.readFileSync(process.env.EVENT_PATH, 'utf8'));
+            const eventName = process.env.GITHUB_EVENT_NAME;
+            const eventPath = process.env.GITHUB_EVENT_PATH;
+            if (!eventPath) {
+              throw new Error('GITHUB_EVENT_PATH is not set.');
+            }
+
+            const payload = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
             const repo = payload.repository?.full_name || process.env.GITHUB_REPOSITORY || 'repository';
 
           const shorten = (value, max = 800) => {
