@@ -173,8 +173,6 @@ BrowserAct Skills is **free and open source**. If it saves you time, please give
 
 ## Star History
 
-## Star History
-
 <a href="https://www.star-history.com/?repos=browser-act%2Fskills&type=date&logscale=&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=browser-act/skills&type=date&theme=dark&logscale&legend=top-left&sealed_token=TH3bcSFq3GYrrTFsxwPiAK-yHr81cGal4RuelBUrWAVA7UahpizB2jT-BJkvIDM_fLrZfpZHT40A3Q5G4CXQYET_Y_cHoxTG_nDiwXEdbe_QnbQUWPfhDz5IH51p7i8Jc2iJlk0Fz7c5ZC63mdO1hGR2ZNZ0SmVqLLaNHj34upNJe_lipqTIhdXYUhSo" />
