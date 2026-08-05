@@ -2,8 +2,6 @@
   <a href="https://www.browseract.com/?co-from=github" style="text-decoration: none;">
     <img src="https://browseract-prod.browseract.com/prod/tools/20260205-154549.png" alt="BrowserAct Logo" width="150">
   </a>
-  <h1>BrowserAct Skills</h1>
-
   <p>
     <a href="https://discord.com/invite/UpnCKd7GaU"><img src="https://img.shields.io/discord/1234567890?label=Discord&logo=discord&color=7289DA" alt="Discord"></a>
     <a href="https://github.com/browser-act/skills/stargazers"><img src="https://img.shields.io/github/stars/browser-act/skills?style=social" alt="GitHub Stars"></a>
@@ -17,8 +15,6 @@
 </div>
 
 ---
-
-Browser automation CLI built for AI agents. Get past anti-bot walls, hand off to humans across platforms when stuck, run parallel tasks without cross-contamination, and isolate multiple accounts in independent browsers.
 
 ## What can BrowserAct be used for?
 
