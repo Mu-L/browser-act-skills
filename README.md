@@ -20,6 +20,36 @@
 
 Browser automation CLI built for AI agents. Get past anti-bot walls, hand off to humans across platforms when stuck, run parallel tasks without cross-contamination, and isolate multiple accounts in independent browsers.
 
+## What can BrowserAct be used for?
+
+BrowserAct enables AI agents and teams to perform real-browser automation, web data extraction, and account-based workflows.
+
+It helps agents get past anti-bot walls, hand off to humans across platforms when stuck, run parallel tasks without cross-contamination, and isolate multiple accounts in independent browsers, backed by stealth fingerprints, TLS rotation, residential proxies, CAPTCHA solving, and stable fingerprint-proxy setups for authenticated sessions.
+
+Two usage modes are available: fully cloud-managed execution, or local browser control driven by your own agent workflow.
+
+### Use BrowserAct in the cloud
+
+**No agent setup required.** Describe the website, filters, and fields you need. BrowserAct builds and tests a reusable scraping Bot in a real cloud browser, then outputs structured data. **Build once. Run reliably. Improve continuously.**
+
+<a href="https://www.browseract.com/?co-from=github">
+  <img src="assets/readme/browseract-cloud-one-prompt-demo.png" alt="BrowserAct Cloud turns natural-language input into a reusable scraping bot">
+</a>
+
+[Start from BrowserAct Cloud →](https://www.browseract.com/?co-from=github)
+
+**Watch demo:** [Build a Web Scraper from One Prompt | BrowserAct →](https://www.youtube.com/watch?v=1M11lfNW7rE)
+
+### Use BrowserAct locally with Skills
+
+Use BrowserAct Skills when you want local browser control, local Chrome login-state reuse, or direct integration into your own AI agent workflow.
+
+Your agent can load the BrowserAct Skill, discover browser state with `get-skills`, and run browser automation commands directly from your local environment.
+
+**Watch demo:** [BrowserAct: Give AI Agents a Real Browser →](https://www.youtube.com/watch?v=sTUD4drYYrk)
+
+[Start from BrowserAct Skills →](#install)
+
 ## Why BrowserAct
 
 The browser an AI agent needs has to reach places standard tools can't, let a human seamlessly take over when the agent is stuck, keep parallel tasks from cross-contaminating, and be designed for LLM reasoning — not human-written scripts. **A browser for agents must get four things right.**
