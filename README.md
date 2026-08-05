@@ -24,7 +24,7 @@ It helps agents get past anti-bot walls, hand off to humans across platforms whe
 
 Two usage modes are available: fully cloud-managed execution, or local browser control driven by your own agent workflow.
 
-### Use BrowserAct in the cloud
+### Use [BrowserAct](https://www.browseract.com/?co-from=github) in the cloud
 
 **No agent setup required.** Describe the website, filters, and fields you need. BrowserAct builds and tests a reusable scraping Bot in a real cloud browser, then outputs structured data. **Build once. Run reliably. Improve continuously.**
 
