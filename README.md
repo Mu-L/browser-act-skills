@@ -197,13 +197,3 @@ BrowserAct Skills is **free and open source**. If it saves you time, please give
 - 🌐 [BrowserAct Website](https://www.browseract.com/?co-from=github)
 
 <p align="center"><em>Built with ❤️ by the BrowserAct Team</em></p>
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=browser-act%2Fskills&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=browser-act/skills&type=date&theme=dark&legend=top-left&sealed_token=OH8K-TjvoMxWtOyfWkf9ri_DP-y2Po3yUEZ6YaNVCWfcd6-T1AL2zcLHx4o6sFNDlP1RVDlshQYwt339WsxrrUaV-9tBESEZfGVUF43Ak7qJ2kkWZvPxj3LFSnWTWwA1rd3_s154lK8mrrZ3uDscP2dr-dwKsYPHfTHrHjnBLnT33Bf4Hxun2ptV6Fdb" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=browser-act/skills&type=date&legend=top-left&sealed_token=OH8K-TjvoMxWtOyfWkf9ri_DP-y2Po3yUEZ6YaNVCWfcd6-T1AL2zcLHx4o6sFNDlP1RVDlshQYwt339WsxrrUaV-9tBESEZfGVUF43Ak7qJ2kkWZvPxj3LFSnWTWwA1rd3_s154lK8mrrZ3uDscP2dr-dwKsYPHfTHrHjnBLnT33Bf4Hxun2ptV6Fdb" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=browser-act/skills&type=date&legend=top-left&sealed_token=OH8K-TjvoMxWtOyfWkf9ri_DP-y2Po3yUEZ6YaNVCWfcd6-T1AL2zcLHx4o6sFNDlP1RVDlshQYwt339WsxrrUaV-9tBESEZfGVUF43Ak7qJ2kkWZvPxj3LFSnWTWwA1rd3_s154lK8mrrZ3uDscP2dr-dwKsYPHfTHrHjnBLnT33Bf4Hxun2ptV6Fdb" />
- </picture>
-</a>
