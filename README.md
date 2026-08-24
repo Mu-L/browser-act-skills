@@ -27,10 +27,10 @@ Two usage modes are available: fully cloud-managed execution, or local browser c
 
 ### Use [BrowserAct](https://www.browseract.com/?co-from=github) in the cloud
 
-**No agent setup required.** Describe the website, filters, and fields you need. BrowserAct builds and tests a reusable scraping Bot in a real cloud browser, then outputs structured data. **Build once. Run reliably. Improve continuously.**
+**No agent setup required, with lower operating cost.** Describe the website, filters, and fields you need. BrowserAct builds and tests a reusable scraping Bot in a real cloud browser, then runs it from the cloud. **Build once. Run reliably. Improve continuously.**
 
 <a href="https://www.browseract.com/?co-from=github">
-  <img src="assets/readme/browseract-cloud-one-prompt-demo.png" alt="BrowserAct Cloud turns natural-language input into a reusable scraping bot">
+  <img src="assets/readme/browseract-cloud-lower-cost-demo.png" alt="BrowserAct Cloud extracts data from any website with one prompt at a lower cost per run">
 </a>
 
 [Start from BrowserAct Cloud →](https://www.browseract.com/?co-from=github)
